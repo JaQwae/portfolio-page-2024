@@ -1,11 +1,13 @@
 #nav-toggle-btn {
     appearance: none;
-    background-color: green;
-    color: red;
-    border-radius: solid 10px red;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    /* box-shadow: var(--link-shadow); */
     padding: 0.5rem 1rem;
-    margin-left: 0.5rem;
-    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+    box-shadow: var(--secondary-color) 0px 5px 15px;
 }
 
 .fa-bars {

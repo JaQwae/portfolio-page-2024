@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { DarkMode } from '../dark-mode/DarkMode';
 import "./Navbar.css"
 
 
@@ -35,7 +36,9 @@ const Navbar = () => {
                     <Link to='/connect' className='nav-item-container'>
                         <i className="fa-solid fa-link nav-icon"></i><h3 className='nav-words'>Connect</h3>
                     </Link>
-                    
+                    <div>
+                        <DarkMode id="light-dark-toggle" className='nav-item-container'/>
+                    </div>
                 </div>
             </div>
         </nav>

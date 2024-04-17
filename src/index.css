@@ -1,10 +1,23 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --primary-color: #FEF8DD;
+  --secondary-color: #25CED1;
+  --word-color: #856d4d;
+
+  /* --link-color: #7D8CA3; */
+  /* --link-shadow: 0.1rem 0.1rem #232427; */
+  /* --button-color: white; */
 }
 
-body {
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
+[data-theme="dark"] {
+  --primary-color: #2D2D34;
+  --secondary-color: #7D84B2;
+  --word-color: #fbfff1;
+
+  /* --link-color: #F5D789; */
+  /* --link-shadow: 0.1rem 0.1rem #232427; */
+  /* --button-color: black; */
 }
 
+* {
+  transition: all 0.2s ease-in-out;
+}
