@@ -1,0 +1,156 @@
+#home-page {
+    justify-content: center;
+    align-items: center;
+}
+
+#home-page-greeting{
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    font-family: 'Titan One', cursive;
+}
+
+.home-page-intro-sentence{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Titan One', cursive;
+}
+
+.home-page-first-intro-sentence{
+    display: flex;
+    align-items: center;
+}
+
+.my-name-on-home-page{
+    margin-left: 0.7rem;
+    font-size: 4rem;
+    font-family: 'Tilt Prism', cursive;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+#home-page-tech-stack{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+.social-media-icon-container{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icons{
+    padding: 1rem;
+    margin: 2rem;
+    font-size: 4rem;
+    border-radius: 50%;
+    color: var(--word-color);
+    /* used for hover animation on social icons */
+    position: relative;
+    overflow: hidden;
+}
+
+/* used for hover animation on social icons */
+.social-media-icons span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+#social-media-icons span{
+    background-color: var(--secondary-color);
+}
+
+.social-media-icons:hover span {
+    transform: translateY(0) scale(2);
+}
+.social-media-icons span:nth-child(1) {
+    --n: 1;
+}
+.social-media-icons span:nth-child(2) {
+    --n: 2;
+}
+.social-media-icons span:nth-child(3) {
+    --n: 3;
+}
+.social-media-icons span:nth-child(4) {
+    --n: 4;
+}
+
+/* Tablet Sizing */
+@media screen and (max-width: 1023px) {
+    #home-page{
+        margin: auto;
+        width: 80%;
+    }
+
+    #home-page-greeting{
+        font-size: 5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .home-page-intro-sentence{
+        font-size: 2.2rem;
+    }
+
+    .my-name-on-home-page{
+        margin-left: 1rem;
+        font-size: 3.2rem;
+    }
+
+    #home-page-tech-stack{
+        font-size: 1.8rem;
+        margin: 1rem 0rem 0.5rem;
+    }
+
+    .social-media-icons{
+        padding: 1rem;
+        margin: 0rem 0.5rem;
+        font-size: 3rem;
+    }
+}
+
+/* Phone Sizing */
+@media screen and (max-width: 576px) {
+    #home-page{
+        width: 100%;
+    }
+
+    #home-page-greeting{
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .home-page-intro-sentence{
+        font-size: 1rem;
+    }
+
+    .my-name-on-home-page{
+        margin-left: 0.3rem;
+        margin-bottom: 0.1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    #home-page-tech-stack{
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+
+    .social-media-icons{
+        padding: 1rem;
+        margin: 0.5rem;
+        font-size: 2rem;
+    }
+}

@@ -6,3 +6,11 @@ body {
     color: var(--word-color);
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+.pages{
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+}
+
+
