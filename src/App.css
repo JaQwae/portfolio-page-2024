@@ -13,4 +13,12 @@ body {
     width: 100vw;
 }
 
+.page-title {
+    margin: 1rem auto 3rem;
+    font-size: 4rem;
+    font-family: 'Titan One', cursive;
+    letter-spacing: 0.5rem;
+    text-shadow: 10px 5px var(--secondary-color);
+}
+
 
