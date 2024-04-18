@@ -53,6 +53,7 @@
     /* used for hover animation on social icons */
     position: relative;
     overflow: hidden;
+    /* z-index:98 */
 }
 
 /* used for hover animation on social icons */

@@ -1,0 +1,176 @@
+#about-page{
+    flex-direction: column;
+}
+
+.about-page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.about-me-section-title{
+    margin: 2rem 0rem;
+    font-size: 3rem;
+    font-family: 'Antic Slab', serif;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+.sub-section-title{
+    margin-bottom: 1rem;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 5%;
+    font-family: 'Special Elite', cursive;
+    letter-spacing: 0.02rem;
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+.about-page-pictures{
+    height: 30rem;
+    width: 90%;
+    margin-bottom: 1rem;
+    box-shadow: var(--box-shadow-format);
+    object-fit:cover;
+    /* can change for each photo */
+    /* object-position: 10% 70%; */
+}
+
+/* #about-me-profile-picture{
+    object-position: 10% 5%;
+} */
+
+/* #about-me-videography{
+    object-position: 10% 52%
+} */
+
+.about-me-paragraphs{
+    display: flex;
+    text-align:left;
+    width: 90%;
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+}
+
+.about-me-page-break {
+    border: 4px solid var(--secondary-color);
+    min-width: 90%;
+    opacity: 50;
+    /* margin: auto; */
+}
+
+#ut-title{
+    padding-top: 3rem;
+}
+
+#location-content-container{
+    display: flex;
+    justify-content: center;
+    width:95%;
+    padding-bottom: 2rem;
+}
+
+.location-map {
+    height: 30rem;
+    min-width: 70%;
+}
+
+.location-information {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 2rem;
+    height: 30rem;
+    font-family: 'Antic Slab', serif;
+    letter-spacing: 0.02rem;
+}
+
+.location-information p {
+    font-weight: 600;
+    text-align: center;
+    color: var(--primary-color)
+}
+
+/* Tablet Sizing */
+@media screen and (max-width: 1024px) {
+    #location-content-container{
+        width:90%;
+    }
+    
+    .location-information {
+        justify-content: space-evenly;
+        padding: 2rem;
+        letter-spacing: 0.1rem;
+    }
+}
+
+/* Phone Sizing */
+@media screen and (max-width: 576px) {
+    .about-page-container{
+        max-width: 95%;
+    }
+
+    .about-me-section-title{
+        margin: 1.5rem 0rem;
+        font-size: 2.4rem;
+    }
+    
+    .sub-section-title{
+        margin-bottom: 0.75rem;
+        letter-spacing: 0rem;
+        font-size: 1.5rem;
+    }
+    
+    .about-page-pictures{
+        height: 22.5rem;
+        width: 90%;
+        margin-bottom: 0.75rem;
+    }
+    
+    #about-me-profile-picture{
+        object-position: 48% 5%;
+    }
+
+    #ut-photo{
+        object-position: 65% 5%;
+    }
+    
+    #about-me-videography{
+        object-position: 25% 52%
+    }
+    
+    .about-me-paragraphs{
+        font-size: 1rem;
+        margin: 0.75rem 0rem;
+    }
+    
+    #ut-title{
+        padding-top: 2.25rem;
+    }
+    
+    #location-content-container{
+        flex-direction: column;
+        width:90%;
+    }
+    
+    .location-map {
+        height: 22.5rem;
+        /* min-width: 70%; */
+    }
+    
+    .location-information {
+        padding: 1.5rem;
+        height: auto;
+        letter-spacing: 0.02rem;
+        width: 100%
+    }
+    
+    .location-information p {
+        letter-spacing: 0.15rem;
+    }
+}

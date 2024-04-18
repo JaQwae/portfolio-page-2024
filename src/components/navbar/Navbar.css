@@ -1,3 +1,8 @@
+nav{
+    position: fixed;
+    top:1%;
+}
+
 #nav-toggle-btn {
     appearance: none;
     background-color: var(--primary-color);
@@ -45,4 +50,13 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
+}
+
+/* Tablet Sizing */
+@media screen and (max-width: 1023px) {
+    #nav-toggle-btn {
+        /* padding: 0.5rem 1rem; */
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+    }
 }
