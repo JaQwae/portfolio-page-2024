@@ -3,11 +3,6 @@
     align-items: center;
 }
 
-/* #home-page-word-container{
-    display: flex;
-    flex-direction: column;
-} */
-
 #home-page-greeting{
     display: flex;
     justify-content: center;
@@ -32,7 +27,8 @@
     margin-left: 0.7rem;
     font-size: 4rem;
     font-family: 'Tilt Prism', cursive;
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    font-weight: 600;
 }
 
 #home-page-tech-stack{
@@ -93,7 +89,68 @@
 }
 
 /* Tablet Sizing */
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1023px) {
+    #home-page{
+        margin: auto;
+        width: 80%;
+    }
+
+    #home-page-greeting{
+        font-size: 5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .home-page-intro-sentence{
+        font-size: 2.2rem;
+    }
+
+    .my-name-on-home-page{
+        margin-left: 1rem;
+        font-size: 3.2rem;
+    }
+
+    #home-page-tech-stack{
+        font-size: 1.8rem;
+        margin: 1rem 0rem 0.5rem;
+    }
+
+    .social-media-icons{
+        padding: 1rem;
+        margin: 0rem 0.5rem;
+        font-size: 3rem;
+    }
+}
 
 /* Phone Sizing */
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    #home-page{
+        width: 100%;
+    }
+
+    #home-page-greeting{
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .home-page-intro-sentence{
+        font-size: 1rem;
+    }
+
+    .my-name-on-home-page{
+        margin-left: 0.3rem;
+        margin-bottom: 0.1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    #home-page-tech-stack{
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+
+    .social-media-icons{
+        padding: 1rem;
+        margin: 0.5rem;
+        font-size: 2rem;
+    }
+}
