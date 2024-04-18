@@ -35,7 +35,7 @@ const About = () => {
           <h2 className="about-me-section-title">Education</h2>
           <h3 className="sub-section-title">Texas A&M University</h3>
           <img
-            id='about-me-TexasA&M-photo'
+            id='texasA&M-photo'
             className="about-page-pictures"
             src={tamu}
             alt="Texas A&M University">
@@ -43,7 +43,7 @@ const About = () => {
           <article className='about-me-paragraphs'>Growing up with a passion for healthcare, I pursued Kinesiology with a double minor in Psychology and Sports Management at Texas A&M. I graduated with my bachelor’s degree in 2020. While excelling in my academics, I balanced my time between volunteering at the hospital and competing for the university’s track and field team.</article>
           <h3 id="ut-title" className="sub-section-title">University of Texas Austin</h3>
           <img
-            id='about-me-UT-photo'
+            id='ut-photo'
             className="about-page-pictures"
             src={ut}
             alt="University of Texas Austin">

@@ -89,3 +89,88 @@
     font-family: 'Antic Slab', serif;
     letter-spacing: 0.02rem;
 }
+
+.location-information p {
+    font-weight: 600;
+    text-align: center;
+    color: var(--primary-color)
+}
+
+/* Tablet Sizing */
+@media screen and (max-width: 1024px) {
+    #location-content-container{
+        width:90%;
+    }
+    
+    .location-information {
+        justify-content: space-evenly;
+        padding: 2rem;
+        letter-spacing: 0.1rem;
+    }
+}
+
+/* Phone Sizing */
+@media screen and (max-width: 576px) {
+    .about-page-container{
+        max-width: 95%;
+    }
+
+    .about-me-section-title{
+        margin: 1.5rem 0rem;
+        font-size: 2.4rem;
+    }
+    
+    .sub-section-title{
+        margin-bottom: 0.75rem;
+        letter-spacing: 0rem;
+        font-size: 1.5rem;
+    }
+    
+    .about-page-pictures{
+        height: 22.5rem;
+        width: 90%;
+        margin-bottom: 0.75rem;
+    }
+    
+    #about-me-profile-picture{
+        object-position: 48% 5%;
+    }
+
+    #ut-photo{
+        object-position: 65% 5%;
+    }
+    
+    #about-me-videography{
+        object-position: 25% 52%
+    }
+    
+    .about-me-paragraphs{
+        font-size: 1rem;
+        margin: 0.75rem 0rem;
+    }
+    
+    #ut-title{
+        padding-top: 2.25rem;
+    }
+    
+    #location-content-container{
+        flex-direction: column;
+        width:90%;
+    }
+    
+    .location-map {
+        height: 22.5rem;
+        /* min-width: 70%; */
+    }
+    
+    .location-information {
+        padding: 1.5rem;
+        height: auto;
+        letter-spacing: 0.02rem;
+        width: 100%
+    }
+    
+    .location-information p {
+        letter-spacing: 0.15rem;
+    }
+}
