@@ -17,7 +17,6 @@ const Navbar = () => {
                 >
                 <i className="fa-solid fa-bars"></i>
             </button>
-
             <div id="nav-container" className="offcanvas offcanvas-start" data-bs-dismiss="offcanvas" data-bs-backdrop="static" tabIndex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                 <div className="offcanvas-header">
                     {/* <h5 className="offcanvas-title" id="staticBackdropLabel">Welcome</h5> */}
