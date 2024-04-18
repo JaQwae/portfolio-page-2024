@@ -1,6 +1,12 @@
+/* Nav bar positioning */
 .dark_mode {
-    margin-top: -20px;
-    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    /* align-self: end; */
+}
+
+.dark_mode:hover{
+    scale: 1.05;
 }
 
 .dark_mode_label {
@@ -28,8 +34,8 @@
     transition: 0.3s;
 }
 .dark_mode_input {
-    width: 0;
-    height: 0;
+    /* width: 0; */
+    /* height: 0; */
     visibility: hidden;
 }
 .dark_mode_input:checked + .dark_mode_label {
