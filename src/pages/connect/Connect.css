@@ -1,0 +1,152 @@
+#connect-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connect-form-layout{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem 2rem;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* all input boxes + submit button */
+.connect-form-layout input {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.all-input-boxes {
+    border: none;
+    border-bottom: var(--secondary-color) 3px solid;
+    background-color: var(--primary-color);
+    color: var(--word-color);
+}
+
+.all-input-boxes:hover {
+    background-color: var(--input-hover-color);
+}
+
+/* formatting for both items in a two row column */
+.contact-form-two-box-row-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/* formatting for each item that is in a two row column */
+.form-sections{
+    display:flex;
+    flex-direction: column;
+    flex-grow: 2;
+    padding: 1rem;
+}
+
+#message {
+    height: 6rem;
+}
+
+#submit-button {
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    color: var(--word-color);
+    background: var(--primary-color);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    box-shadow: var(--secondary-color) 0px 5px 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: 900;
+    margin: 2rem auto 0.5rem;
+    font-size: 1.2rem;
+}
+
+#submit-button:before {
+    content: '';
+    background: linear-gradient(45deg, var(--secondary-color), var(--word-color),var(--secondary-color), var(--word-color),var(--secondary-color), var(--word-color));
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+#submit-button:active {
+    color: var(--primary-color);
+}
+
+#submit-button:active:after {
+    background: transparent;
+}
+
+#submit-button:hover:before {
+    opacity: 1;
+}
+
+#submit-button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+#connect-form-error-message{
+    color: red;
+    -webkit-text-stroke: 0.5px black;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+}
+
+/* Tablet Sizing */
+@media screen and (max-width: 1024px) {
+    #connect-page {
+        justify-content: center;
+    }
+}
+
+/* Phone Sizing */
+@media screen and (max-width: 576px) {
+    #connect-page-title{
+        margin: 6rem auto 1rem;
+    }
+
+    #connect-page {
+        justify-content: flex-start;
+    }
+
+    .connect-form-layout{
+        padding: 0rem 0rem 0rem;
+        box-shadow: none;
+        width: 90%
+    }
+
+    #submit-button {
+        margin: 2rem auto 0rem;
+    }
+
+    #connect-form-error-message{
+        margin: 0.5rem 0rem 1rem;
+    }
+}
