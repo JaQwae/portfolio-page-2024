@@ -1,15 +1,16 @@
-nav{
-    position: fixed;
-    top:1%;
+.portfolio-buttons-container{
+    margin-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#nav-toggle-btn {
-    color: var(--secondary-color);
-    padding: 0.5rem 1rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
+.portfolio-buttons {
+    width: 10rem;
+    height: 3rem;
     border: none;
     outline: none;
+    color: var(--word-color);
     background: var(--primary-color);
     cursor: pointer;
     position: relative;
@@ -19,10 +20,12 @@ nav{
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-family: 'Stick No Bills', sans-serif;
+    font-weight: 600;
     margin: 1rem;
+    font-size: 1.2rem;
 }
 
-#nav-toggle-btn:before {
+.portfolio-buttons:before {
     content: '';
     background: linear-gradient(45deg, var(--secondary-color), var(--word-color),var(--secondary-color), var(--word-color),var(--secondary-color), var(--word-color));
     position: absolute;
@@ -39,19 +42,19 @@ nav{
     border-radius: 10px;
 }
 
-#nav-toggle-btn:active {
+.portfolio-buttons:active {
     color: var(--primary-color);
 }
 
-#nav-toggle-btn:active:after {
+.portfolio-buttons:active:after {
     background: transparent;
 }
 
-#nav-toggle-btn:hover:before {
+.portfolio-buttons:hover:before {
     opacity: 1;
 }
 
-#nav-toggle-btn:after {
+.portfolio-buttons:after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -69,48 +72,17 @@ nav{
     100% { background-position: 0 0; }
 }
 
-.fa-bars {
-    font-size: 1.5rem;
-}
-
-#staticBackdrop {
-    background-color: var(--secondary-color);
-}
-
-.nav-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.nav-item-container{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: var(--primary-color);
-    padding: 2.5rem;
-}
-
-.nav-item-container:hover{
-    color: var(--word-color);
-}
-
-.nav-icon{
-    font-size: 2rem;
-    margin-right: 0.8rem ;
-}
-
-.nav-words{
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-}
-
 /* Tablet Sizing */
 @media screen and (max-width: 1023px) {
-    #nav-toggle-btn {
-        /* padding: 0.5rem 1rem; */
-        margin-left: 1.5rem;
-        margin-top: 1.5rem;
+    .portfolio-buttons {
+        width: 14rem;
+    }
+}
+
+/* Phone Sizing */
+@media screen and (max-width: 576px) {
+    .portfolio-buttons {
+        width: 8rem;
+        font-size: 1rem;
     }
 }

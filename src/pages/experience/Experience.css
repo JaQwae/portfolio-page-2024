@@ -1,0 +1,19 @@
+#portfolio-page{
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+/* Tablet Sizing */
+@media screen and (max-width: 1023px) {}
+
+/* Phone Sizing */
+@media screen and (max-width: 576px) {
+    #portfolio-page{
+        /* flex-direction: column; */
+        /* align-items: center; */
+        width: 95%;
+        /* margin: auto; */
+    }
+}

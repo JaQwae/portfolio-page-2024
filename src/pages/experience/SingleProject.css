@@ -1,0 +1,53 @@
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.single-project {
+    height: 20rem;
+    width: 20rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.project-title {
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+.project-images{
+    height: 17.3rem;
+    width: 100%;
+    /* display: block; */
+    object-fit: cover;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.hover-project-state{
+    text-align: center;
+}
+
+/* hides elements on portfolio page */
+.hidden-project-state{
+    display: none;
+}
+
+.project-icons{
+    font-size: 6rem;
+    margin: 8rem 2rem 2rem;
+}
+
+.icon-link{
+    text-decoration: none;
+    color: var(--secondary-color)
+}
+
+.icon-link:hover {
+    color: var(--word-color);
+    transition-duration: 0.3s;
+}
