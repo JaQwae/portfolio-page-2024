@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {data} from "../../data/portfolioData.js"
 import ProjectList from "./ProjectList";
+import "./Experience.css"
 
 const Experience = () => {
 
@@ -26,8 +27,8 @@ const Experience = () => {
     const map = new Map(Object.entries(projects));
 
     return (
-        <div id ="portfolio-page" className='page'>
-            <h1 className="page-title">Portfolio Page</h1>
+        <div id ="portfolio-page" className='pages'>
+            <h1 className="page-title">Portfolio</h1>
             <ProjectList projects = {projects} handleButtonClick={handleButtonClick} />
         </div>
     )

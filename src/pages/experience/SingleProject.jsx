@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import PropTypes from 'prop-types';
+import "./SingleProject.css"
 
 export default function SingleProject (props) {
     const[isHovering, setIsHovering] = useState(false);
