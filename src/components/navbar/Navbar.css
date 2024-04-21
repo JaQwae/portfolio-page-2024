@@ -75,13 +75,7 @@ nav{
 
 #staticBackdrop {
     background-color: var(--secondary-color);
-
-    /* z-index: 98; */
 }
-
-/* .offcanvas-backdrop{
-    z-index: 99;
-} */
 
 .nav-content{
     display: flex;
@@ -115,7 +109,6 @@ nav{
 /* Tablet Sizing */
 @media screen and (max-width: 1023px) {
     #nav-toggle-btn {
-        /* padding: 0.5rem 1rem; */
         margin-left: 1.5rem;
         margin-top: 1.5rem;
     }
