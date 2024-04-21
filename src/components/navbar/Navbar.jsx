@@ -6,17 +6,13 @@ import "./Navbar.css"
 
 const Navbar = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
-    // console.log(`starting state: ${isNavOpen}`)
 
     function disableButtons() {
         setIsNavOpen(!isNavOpen);
-        // console.log(`in function state: ${isNavOpen}`)
 
         if(isNavOpen) {
-            // console.log("here");
             disableBtn(0);
         } else {
-            // console.log("there");
             disableBtn(-1);
         }
     }
