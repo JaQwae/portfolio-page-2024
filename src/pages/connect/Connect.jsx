@@ -230,6 +230,7 @@ const Connect = () => {
             value="Submit"
             type="submit"
             id="submit-button"
+            className='btns'
           >
             Submit
           </button>
