@@ -1,10 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
+import { disableBtn } from '../../utils/disableElements';
 import { DarkMode } from '../dark-mode/DarkMode';
 import "./Navbar.css"
 
-
 const Navbar = () => {
+    const [isNavOpen, setIsNavOpen] = useState(false);
+    // console.log(`starting state: ${isNavOpen}`)
+
+    function disableButtons() {
+        setIsNavOpen(!isNavOpen);
+        // console.log(`in function state: ${isNavOpen}`)
+
+        if(isNavOpen) {
+            // console.log("here");
+            disableBtn(0);
+        } else {
+            // console.log("there");
+            disableBtn(-1);
+        }
+    }
+
     return (
         <nav>
             <button 
@@ -14,12 +30,21 @@ const Navbar = () => {
                 data-bs-toggle="offcanvas" 
                 data-bs-target="#staticBackdrop" 
                 aria-controls="staticBackdrop"
+                onClick={() => disableButtons()}
                 >
                 <i className="fa-solid fa-bars"></i>
             </button>
-            <div id="nav-container" className="offcanvas offcanvas-start" data-bs-dismiss="offcanvas" data-bs-backdrop="static" tabIndex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div 
+                id="nav-container" 
+                className="offcanvas offcanvas-start" 
+                data-bs-dismiss="offcanvas" 
+                data-bs-backdrop="static" 
+                tabIndex="-1" 
+                id="staticBackdrop" 
+                aria-labelledby="staticBackdropLabel"
+                onClick={() => disableButtons()}
+            >
                 <div className="offcanvas-header">
-                    {/* <h5 className="offcanvas-title" id="staticBackdropLabel">Welcome</h5> */}
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div className="offcanvas-body nav-content">

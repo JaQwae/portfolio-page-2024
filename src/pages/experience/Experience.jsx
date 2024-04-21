@@ -4,9 +4,13 @@ import ProjectList from "./ProjectList";
 import "./Experience.css"
 
 const Experience = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'instant'
+    });
 
     const projectData = {
-      projects: data,
+        projects: data,
     }
 
     console.log(projectData)

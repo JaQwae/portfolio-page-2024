@@ -8,25 +8,25 @@ export default function ProjectList (props) {
         <React.Fragment>
             <div className= "portfolio-buttons-container">
                 <button 
-                    className="portfolio-buttons" 
+                    className="portfolio-buttons btns" 
                     value='all' 
                     onClick={props.handleButtonClick}>
                         All
                 </button>
                 <button 
-                    className="portfolio-buttons"
+                    className="portfolio-buttons btns"
                     value='front-end' 
                     onClick={props.handleButtonClick}>
                         Front-End
                 </button>
                 <button 
-                    className="portfolio-buttons "
+                    className="portfolio-buttons btns"
                     value='back-end' 
                     onClick={props.handleButtonClick}>
                         Back-End
                 </button>
                 <button 
-                    className="portfolio-buttons"
+                    className="portfolio-buttons btns"
                     value='full-stack' 
                     onClick={props.handleButtonClick}>
                         Full-Stack

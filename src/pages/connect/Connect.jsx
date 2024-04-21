@@ -6,6 +6,10 @@ import emailjs from "@emailjs/browser";
 import "./Connect.css"
 
 const Connect = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'instant'
+});
 
   const form = useRef();
 
@@ -230,6 +234,7 @@ const Connect = () => {
             value="Submit"
             type="submit"
             id="submit-button"
+            className='btns'
           >
             Submit
           </button>

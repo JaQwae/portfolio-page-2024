@@ -3,10 +3,6 @@
   --secondary-color: #004B96;
   --word-color: #562B00;
   --input-hover-color:#58575109;
-
-  /* --link-color: #7D8CA3; */
-  /* --link-shadow: 0.1rem 0.1rem #232427; */
-  /* --button-color: white; */
 }
 
 [data-theme="dark"] {
@@ -14,10 +10,6 @@
   --secondary-color: #7D84B2;
   --word-color: #fbfff1;
   --input-hover-color: #cbcbff06;
-
-  /* --link-color: #F5D789; */
-  /* --link-shadow: 0.1rem 0.1rem #232427; */
-  /* --button-color: black; */
 }
 
 /* * {
