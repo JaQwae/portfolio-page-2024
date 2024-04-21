@@ -18,19 +18,28 @@ const Home = () => {
                     <h6 id='home-page-tech-stack'>MERN | C# | Python</h6>
             </section>
             <section className="social-media-icon-container">
-                <a href="https://www.linkedin.com/in/jaqwae-ellison/" target="_blank" rel="noreferrer noopener">
+                <a 
+                    className='btns'
+                    href="https://www.linkedin.com/in/jaqwae-ellison/" 
+                    target="_blank" 
+                    rel="noreferrer noopener"
+                >
                     <i className="fa-brands fa-linkedin social-media-icons" id={`social-media-icons`}>
                         {/* Gives hover animation over links */}
                         <span></span><span></span><span></span><span></span>
                     </i>
                 </a>
-                <a href="https://github.com/JaQwae" target="_blank" rel="noreferrer noopener">
+                <a 
+                    className='btns'
+                href="https://github.com/JaQwae" target="_blank" rel="noreferrer noopener">
                     <i className="fa-brands fa-github social-media-icons" id={`social-media-icons`}>
                         {/* Gives hover animation over links */}
                         <span></span><span></span><span></span><span></span>
                     </i>
                 </a>
-                <a href="https://twitter.com/CodingOg" target="_blank" rel="noreferrer noopener">
+                <a 
+                    className='btns'
+                href="https://twitter.com/CodingOg" target="_blank" rel="noreferrer noopener">
                     <i className="fa-brands fa-twitter social-media-icons" id={`social-media-icons`}>
                         {/* Gives hover animation over links */}
                         <span></span><span></span><span></span><span></span>

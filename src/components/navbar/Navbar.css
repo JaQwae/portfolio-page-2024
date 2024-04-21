@@ -75,7 +75,13 @@ nav{
 
 #staticBackdrop {
     background-color: var(--secondary-color);
+
+    /* z-index: 98; */
 }
+
+/* .offcanvas-backdrop{
+    z-index: 99;
+} */
 
 .nav-content{
     display: flex;
