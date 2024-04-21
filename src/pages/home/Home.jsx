@@ -2,6 +2,11 @@ import React from 'react'
 import "./Home.css"
 
 const Home = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'instant'
+    });
+
     return (
         <div id='home-page' className='pages'>
             <div id='main-home-page-content'>

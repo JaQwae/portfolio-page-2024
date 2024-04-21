@@ -6,6 +6,11 @@ import videographyPhoto from '../../assets/images/about-page/videographyPhoto.jp
 import "./About.css"
 
 const About = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'instant'
+});
+
   return (
     <div id="about-page" className='pages'>
       <h1 className="page-title">About</h1>

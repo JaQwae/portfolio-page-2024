@@ -6,6 +6,10 @@ import emailjs from "@emailjs/browser";
 import "./Connect.css"
 
 const Connect = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'instant'
+});
 
   const form = useRef();
 
