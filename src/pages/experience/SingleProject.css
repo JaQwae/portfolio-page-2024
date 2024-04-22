@@ -3,12 +3,14 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+    /* background-color: var(--primary-color); */
 }
 
 .single-project {
     height: 20rem;
     width: 20rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: var(--primary-color);
 }
 
 .project-title {

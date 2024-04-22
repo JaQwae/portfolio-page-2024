@@ -1,21 +1,21 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
-import { disableBtn } from '../../utils/disableElements';
+import { disableElements } from '../../utils/disableElements';
 import { DarkMode } from '../dark-mode/DarkMode';
 import "./Navbar.css"
 
 const Navbar = () => {
-    const [isNavOpen, setIsNavOpen] = useState(false);
+    // const [isNavOpen, setIsNavOpen] = useState(false);
 
-    function disableButtons() {
-        setIsNavOpen(!isNavOpen);
+    // function disableButtons() {
+    //     setIsNavOpen(!isNavOpen);
 
-        if(isNavOpen) {
-            disableBtn(0);
-        } else {
-            disableBtn(-1);
-        }
-    }
+    //     if(isNavOpen) {
+    //         disableBtn(0);
+    //     } else {
+    //         disableBtn(-1);
+    //     }
+    // }
 
     return (
         <nav>
@@ -26,7 +26,7 @@ const Navbar = () => {
                 data-bs-toggle="offcanvas" 
                 data-bs-target="#staticBackdrop" 
                 aria-controls="staticBackdrop"
-                onClick={() => disableButtons()}
+                onClick={() => disableElements(-1)}
                 >
                 <i className="fa-solid fa-bars"></i>
             </button>
@@ -38,7 +38,7 @@ const Navbar = () => {
                 tabIndex="-1" 
                 id="staticBackdrop" 
                 aria-labelledby="staticBackdropLabel"
-                onClick={() => disableButtons()}
+                onClick={() => disableElements(0)}
             >
                 <div className="offcanvas-header">
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
