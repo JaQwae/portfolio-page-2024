@@ -1,3 +1,4 @@
+import { jsColorChange } from "../../utils/jsColorChange";
 import "./DarkMode.css"
 
 export function DarkMode() {
@@ -5,11 +6,13 @@ export function DarkMode() {
     const setDarkMode = () => {
         document.querySelector("body").setAttribute("data-theme", "dark")
         localStorage.setItem("selectedTheme", "dark");
+        jsColorChange(selectedTheme);
     }
 
     const setLightMode = () => {
         document.querySelector("body").setAttribute("data-theme", "light")
         localStorage.setItem("selectedTheme", "light");
+        jsColorChange(selectedTheme);
     }
 
     const selectedTheme = localStorage.getItem("selectedTheme");
