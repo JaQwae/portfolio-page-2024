@@ -9,15 +9,6 @@ import socialApiScreenshot from "../assets/images/portfolio-page/social-networki
 
 export const data = [
     {
-        id: 10,
-        category: "front-end",
-        title: "Select Plumbing",
-        image: selectPlumbingScreenshot,
-        altText: "Select Plumbing Website",
-        deployedLink: "https://6612ff6a26d115fb2e07ca62--selectplumbing.netlify.app/",
-        gitHubLink: "https://github.com/JaQwae/select-plumbing",
-    },
-    {
         id: 9,
         category: "full-stack",
         title: "Black Toad Studios",
@@ -25,6 +16,15 @@ export const data = [
         altText: "Black Toad Studios Website",
         deployedLink: "https://blacktoadstudios.com/",
         gitHubLink: "https://github.com/JaQwae/photog-website",
+    },
+    {
+        id: 10,
+        category: "front-end",
+        title: "Select Plumbing",
+        image: selectPlumbingScreenshot,
+        altText: "Select Plumbing Website",
+        deployedLink: "https://theselectplumbing.com/",
+        gitHubLink: "https://github.com/JaQwae/select-plumbing",
     },
     {
         id: 1,
