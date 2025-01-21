@@ -6,6 +6,7 @@ import eCommerceBackendScreenshot from "../assets/images/portfolio-page/e-commer
 import teamProfileGeneratorScreenshot from "../assets/images/portfolio-page/team-profile-generator-screenshot.png"
 import noteTakerScreenshot from "../assets/images/portfolio-page/note-taker-screenshot.png"
 import socialApiScreenshot from "../assets/images/portfolio-page/social-networking-API-screenshot.png"
+import passwordGenerator from "../assets/images/portfolio-page/password-generator-screenshot.png"
 
 export const data = [
     {
@@ -54,6 +55,15 @@ export const data = [
         gitHubLink: "https://github.com/JaQwae/weatherDashboard"
     },
     {
+        id: 7,
+        category: "front-end",
+        title: "Password Generator",
+        image: passwordGenerator,
+        altText: "Password Generator Application",
+        deployedLink: "https://golden-yeot-c86e0f.netlify.app/",
+        gitHubLink: "https://github.com/JaQwae/Password-Generator-New"
+    },
+    {
         id: 4,
         category: "full-stack",
         title: "Tech Blog",
@@ -88,14 +98,5 @@ export const data = [
         altText: "Note Taker Application",
         deployedLink: "",
         gitHubLink: "https://github.com/JaQwae/Note-Taker"
-    },
-    {
-        id: 7,
-        category: "front-end",
-        title: "Password Generator",
-        image: "https://github.com/JaQwae/Password-Generator/blob/main/images/passwordGeneratorBefore.png?raw=true",
-        altText: "Password Generator Application",
-        deployedLink: "https://jaqwae.github.io/Password-Generator/",
-        gitHubLink: "https://github.com/JaQwae/Password-Generator"
     },
 ]
