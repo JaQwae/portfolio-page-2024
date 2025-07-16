@@ -6,16 +6,22 @@ import "./SingleProject.css"
 export default function SingleProject (props) {
     const[isHovering, setIsHovering] = useState(false);
 
-    function handleMouseEnter (e) {
+    function handleMouseEnter () {
         setIsHovering(true);
     }
 
-    function handleMouseLeave (e) {
+    function handleMouseLeave () {
         setIsHovering(false);
     }
 
     return (
-            <div className="single-project" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <button 
+                className="single-project" 
+                onMouseEnter={handleMouseEnter} 
+                onMouseLeave={handleMouseLeave} 
+                onFocus={handleMouseEnter}
+                onBlur={handleMouseLeave}
+            >
                 {/* active when mouse is not over the element */}
                 <div 
                     className={`"non-hover-project-state" ${
@@ -51,8 +57,10 @@ export default function SingleProject (props) {
                     >
                         <i className="fa-brands fa-github project-icons"></i>
                     </a>
+                    <img src={`${props.project.image}`} alt={`${props.project.altText}`} className="project-images project-images-hover"></img>
+                    <div className="image-overlay"></div>
                 </div>
-            </div>
+            </button>
     )
 }
 

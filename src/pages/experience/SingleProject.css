@@ -3,14 +3,15 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    /* background-color: var(--primary-color); */
 }
 
 .single-project {
+    all: unset;
     height: 20rem;
     width: 20rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: var(--primary-color);
+    position: relative;
 }
 
 .project-title {
@@ -25,13 +26,32 @@
 .project-images{
     height: 17.3rem;
     width: 100%;
-    /* display: block; */
     object-fit: cover;
     font-family: 'Playfair Display SC', serif;
 }
 
+.project-images-hover{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: #000000d4;
+}
+
 .hover-project-state{
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* hides elements on portfolio page */
@@ -41,7 +61,8 @@
 
 .project-icons{
     font-size: 6rem;
-    margin: 8rem 2rem 2rem;
+    margin: 0rem auto;
+    z-index: 3;
 }
 
 .icon-link{

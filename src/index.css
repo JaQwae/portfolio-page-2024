@@ -12,10 +12,6 @@
   --input-hover-color: #cbcbff06;
 }
 
-/* * {
-  transition: all 0.2s ease-in-out;
-} */
-
 #root{
   height:100vh;
   width:100vw;
