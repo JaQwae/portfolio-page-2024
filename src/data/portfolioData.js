@@ -1,3 +1,5 @@
+import jsRideshareScreenshot from "../assets/images/portfolio-page/js-rideshare-screenshot.png"
+import monopolyConciergeScreenshot from "../assets/images/portfolio-page/monopoly-concierge-screenshot.png"
 import selectPlumbingScreenshot from "../assets/images/portfolio-page/select-plumbing-site-screenshot.png"
 import blackToadStudioScreenshot from "../assets/images/portfolio-page/black-toad-studios-screenshot.png"
 import workdaySchedulerScreenshot from "../assets/images/portfolio-page/workday-scheduler-screenshot.png"
@@ -10,13 +12,31 @@ import passwordGenerator from "../assets/images/portfolio-page/password-generato
 
 export const data = [
     {
+        id: 12,
+        category: "full-stack",
+        title: "JS Rideshare",
+        image: jsRideshareScreenshot,
+        altText: "Monopoly Concierge Website",
+        deployedLink: "https://www.jsridesharerentals.com/test-home",
+        gitHubLink: "",
+    },
+    {
+        id: 11,
+        category: "full-stack",
+        title: "Monopoly Concierge",
+        image: monopolyConciergeScreenshot,
+        altText: "Monopoly Concierge Website",
+        deployedLink: "https://monopolyconcierge.com/",
+        gitHubLink: "",
+    },
+    {
         id: 9,
         category: "full-stack",
         title: "Black Toad Studios",
         image: blackToadStudioScreenshot,
         altText: "Black Toad Studios Website",
         deployedLink: "https://blacktoadstudios.com/",
-        gitHubLink: "https://github.com/JaQwae/photog-website",
+        gitHubLink: "",
     },
     {
         id: 10,
@@ -25,7 +45,7 @@ export const data = [
         image: selectPlumbingScreenshot,
         altText: "Select Plumbing Website",
         deployedLink: "https://theselectplumbing.com/",
-        gitHubLink: "https://github.com/JaQwae/select-plumbing",
+        gitHubLink: "",
     },
     {
         id: 1,
