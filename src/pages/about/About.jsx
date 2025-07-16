@@ -78,6 +78,7 @@ const About = () => {
           <h2 className="about-me-section-title">Location</h2>
           <div id="location-content-container">
             <iframe
+              title="jaqwae-ellison-location"
               className="location-map"
               src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d51570.07411637546!2d-115.21404808612192!3d36.1146994470192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x80c8c4383428d4eb%3A0x43e2195d0c26834c!2sLas%20Vegas%20Strip%2C%20Nevada!3m2!1d36.1147065!2d-115.17284839999999!5e0!3m2!1sen!2sus!4v1713465010534!5m2!1sen!2sus"
               allowFullScreen=""

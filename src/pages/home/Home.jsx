@@ -20,7 +20,7 @@ const Home = () => {
                         ,
                     </h3>
                     <h3 className='home-page-intro-sentence'>a full-stack web developer</h3>
-                    <h6 id='home-page-tech-stack'>MERN | C# | Python</h6>
+                    <h6 id='home-page-tech-stack'>MERN | Java | Python</h6>
                 </section>
                 <section className="social-media-icon-container">
                     <a
