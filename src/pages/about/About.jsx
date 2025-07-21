@@ -29,7 +29,7 @@ const About = () => {
             id='about-me-introduction-container'
             className='about-me-paragraphs'
           >
-            <p className='about-me-text-paragraphs'>I am a 26-year-old full-stack web developer that specializes in JavaScript, Python and C#. As the learning never stops, I am seeking roles and opportunities that will continue to challenge and expand my knowledge of programming and the tech industry at large. With strong time management skills, I am also detail oriented and a team player that can adapt to the ever-evolving trends and demands of the field.</p>
+            <p className='about-me-text-paragraphs'>I am a full-stack web developer that specializes in JavaScript, Java, AWS. As the learning never stops, I am seeking roles and opportunities that will continue to challenge and expand my knowledge of programming and the tech industry at large. With strong time management skills, I am also detail oriented and a team player that can adapt to the ever-evolving trends and demands of the field.</p>
           </article>
           <hr className="about-me-page-break" />
         </section>
